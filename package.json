@@ -50,9 +50,12 @@
   },
   "dependencies": {
     "basiclightbox": "^5.0.3",
+    "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
     "handlebars": "^4.7.6",
+    "jquery": "^3.5.1",
     "lodash.throttle": "^4.1.1",
+    "popper.js": "^1.16.1",
     "siema": "^1.5.1",
     "uuidv4": "^6.2.5"
   }
