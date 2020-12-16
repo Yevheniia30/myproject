@@ -2,22 +2,31 @@ import throttle from 'lodash.throttle';
 import { uuid } from 'uuidv4';
 import createBox from '../js/practice-box';
 import './styles.css';
-import Timer from './js/timer';
+// import Timer from './js/timer';
+import Todo from './js/todo';
 
-//  TIMER
-const timer = new Timer({
-  selector: '#timer',
-  value: 10,
+// ============TODO LIST============
+const todo = new Todo({
+  selector: '#todo-list',
 });
 
-new Timer({
-  selector: '#timer2',
-  value: 20,
-});
-new Timer({
-  selector: '#timer3',
-  value: 30,
-});
+//  =============TIMER==================
+// const timer = new Timer({
+//   selector: '#timer',
+//   //   value: 10,
+// });
+// // автоматичнский запуск
+// timer.start();
+
+// new Timer({
+//   selector: '#timer2',
+//   value: 20,
+// });
+
+// new Timer({
+//   selector: '#timer3',
+//   value: 30,
+// });
 
 import './js/modal';
 import './js/siema';
