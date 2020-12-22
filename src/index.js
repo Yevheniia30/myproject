@@ -28,6 +28,8 @@ const todo = new Todo({
 //   value: 30,
 // });
 
+import './js/templating';
+
 import './js/modal';
 import './js/siema';
 // import './js/timer';
