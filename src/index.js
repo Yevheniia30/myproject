@@ -2,13 +2,15 @@ import throttle from 'lodash.throttle';
 import { uuid } from 'uuidv4';
 import createBox from '../js/practice-box';
 import './styles.css';
+
+import './js/localstorage';
 // import Timer from './js/timer';
-import Todo from './js/todo';
+// import Todo from './js/todo';
 
 // ============TODO LIST============
-const todo = new Todo({
-  selector: '#todo-list',
-});
+// const todo = new Todo({
+//   selector: '#todo-list',
+// });
 
 //  =============TIMER==================
 // const timer = new Timer({
