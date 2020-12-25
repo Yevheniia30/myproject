@@ -4,7 +4,7 @@ import createBox from '../js/practice-box';
 import './styles.css';
 
 import './js/localstorage';
-// import Timer from './js/timer';
+import Timer from './js/timer';
 // import Todo from './js/todo';
 
 // ============TODO LIST============
@@ -13,11 +13,11 @@ import './js/localstorage';
 // });
 
 //  =============TIMER==================
-// const timer = new Timer({
-//   selector: '#timer',
-//   //   value: 10,
-// });
-// // автоматичнский запуск
+const timer = new Timer({
+  selector: '#timer',
+  //   value: 10,
+});
+// автоматичнский запуск
 // timer.start();
 
 // new Timer({
@@ -32,8 +32,8 @@ import './js/localstorage';
 
 // import './js/templating';
 
-import './js/modal';
-import './js/siema';
+// import './js/modal';
+// import './js/siema';
 // import './js/timer';
 
 import 'bootstrap';

@@ -1,4 +1,24 @@
 import '../timer.css';
+import toastr from 'toastr';
+import 'toastr/build/toastr.min.css';
+
+toastr.options = {
+  closeButton: false,
+  debug: false,
+  newestOnTop: true,
+  progressBar: true,
+  positionClass: 'toast-top-right',
+  preventDuplicates: false,
+  onclick: null,
+  showDuration: '300',
+  hideDuration: '1000',
+  timeOut: '5000',
+  extendedTimeOut: '1000',
+  showEasing: 'swing',
+  hideEasing: 'linear',
+  showMethod: 'fadeIn',
+  hideMethod: 'fadeOut',
+};
 
 const template = value => `
 <div class="timer card">
@@ -42,6 +62,8 @@ class Timer {
     }, 500);
     this.refs.stopBtn.removeAttribute('disabled');
     this.refs.startBtn.setAttribute('disabled', true);
+
+    toastr.success('Have fun storming the castle!');
   }
 
   stop() {
@@ -53,6 +75,11 @@ class Timer {
     this.timerId = 0;
     this.refs.startBtn.removeAttribute('disabled');
     this.refs.stopBtn.setAttribute('disabled', true);
+
+    toastr.error(
+      'I do not think that word means what you think it means.',
+      'Inconceivable!',
+    );
   }
 }
 
