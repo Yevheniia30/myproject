@@ -3,8 +3,13 @@ import { uuid } from 'uuidv4';
 import createBox from '../js/practice-box';
 import './styles.css';
 
-import './js/localstorage';
-import Timer from './js/timer';
+// import './js/localstorage';
+
+import './js/date';
+
+import './js/timer-async';
+
+// import Timer from './js/timer';
 // import Todo from './js/todo';
 
 // ============TODO LIST============
@@ -13,10 +18,10 @@ import Timer from './js/timer';
 // });
 
 //  =============TIMER==================
-const timer = new Timer({
-  selector: '#timer',
-  //   value: 10,
-});
+// const timer = new Timer({
+//   selector: '#timer',
+//   value: 10,
+// });
 // автоматичнский запуск
 // timer.start();
 
@@ -36,5 +41,5 @@ const timer = new Timer({
 // import './js/siema';
 // import './js/timer';
 
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
