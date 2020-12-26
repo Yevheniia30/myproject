@@ -1,5 +1,21 @@
-// --------------CLOCK TIMER-------------
+// --------------SETINTERVAL-------------
+var i = 0;
+for (var i = 0; i < 10; i += 1) {
+  setTimeout(function () {
+    console.log(i);
+  }, 10);
+}
+// -----this------
+const obj = {
+  name: 'Bobby',
+  sayHello() {
+    console.log(this.name);
+  },
+};
 
+setTimeout(obj.sayHello.bind(obj), 1000);
+
+// --------------CLOCK TIMER-------------
 const clockRef = document.querySelector('.js-clockface');
 const startRef = document.querySelector('button[data-action-start]');
 const stopRef = document.querySelector('button[data-action-stop]');
@@ -17,7 +33,7 @@ const timer = {
     this.intervalId = setInterval(() => {
       const currentTime = Date.now();
       const deltaTime = currentTime - startTime;
-      //   console.log(deltaTime);
+      // console.log(deltaTime);
 
       updateClockface(deltaTime);
     }, 1000);
