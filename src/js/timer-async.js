@@ -1,10 +1,17 @@
+// --------------CLOCK TIMER-------------
+
 const clockRef = document.querySelector('.js-clockface');
 const startRef = document.querySelector('button[data-action-start]');
 const stopRef = document.querySelector('button[data-action-stop]');
 
 const timer = {
   intervalId: null,
+  isActive: false,
   start() {
+    if (this.isActive) {
+      return;
+    }
+    this.isActive = true;
     const startTime = Date.now();
 
     this.intervalId = setInterval(() => {
@@ -16,8 +23,10 @@ const timer = {
     }, 1000);
   },
   stop() {
+    this.isActive = false;
     clearInterval(this.intervalId);
     this.intervalId = null;
+    // обнуляет при нажатии стоп
     updateClockface(0);
   },
 };
