@@ -28,11 +28,13 @@ const timer = {
       return;
     }
     this.isActive = true;
-    const startTime = Date.now();
+    // const startTime = Date.now();
+    const eventTime = new Date(2020, 11, 31, 12);
 
     this.intervalId = setInterval(() => {
       const currentTime = Date.now();
-      const deltaTime = currentTime - startTime;
+      // const deltaTime = currentTime - startTime;
+      const deltaTime = eventTime - currentTime;
       // console.log(deltaTime);
 
       updateClockface(deltaTime);
