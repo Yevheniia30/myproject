@@ -21,35 +21,9 @@ const startRef = document.querySelector('button[data-action-start]');
 const stopRef = document.querySelector('button[data-action-stop]');
 
 const timer = {
-  intervalId: null,
-  isActive: false,
-  start() {
-    if (this.isActive) {
-      return;
-    }
-    this.isActive = true;
-    // const startTime = Date.now();
-    const eventTime = new Date(2020, 11, 31, 12);
-
-    this.intervalId = setInterval(() => {
-      const currentTime = Date.now();
-      // const deltaTime = currentTime - startTime;
-      const deltaTime = eventTime - currentTime;
-      // console.log(deltaTime);
-
-      updateClockface(deltaTime);
-    }, 1000);
-  },
-  stop() {
-    this.isActive = false;
-    clearInterval(this.intervalId);
-    this.intervalId = null;
-    // обнуляет при нажатии стоп
-    updateClockface(0);
-  },
+  start() {},
+  stop() {},
 };
-
-timer.start();
 
 // -----преобразование UNIX во время
 const updateClockface = time => {
@@ -63,9 +37,27 @@ const updateClockface = time => {
 };
 
 // -----преобразование 0:0:1 в 00:00:01
-const pad = value => {
-  return String(value).padStart(2, '0');
-};
 
-startRef.addEventListener('click', timer.start.bind(timer));
-stopRef.addEventListener('click', timer.stop.bind(timer));
+console.log(new Date().getUTCDate());
+// console.log(utch);
+
+// --------HNY SCRIPT
+class HappyNewYear {
+  constructor(year, wishes) {
+    this.year = year;
+    this.wishes = wishes;
+    console.log(this.year);
+  }
+
+  sayCongrats() {
+    console.log(`C Новым ${this.year} Годом, друзья!`);
+    console.log(`Желаю всем сохранить ${this.wishes}`);
+  }
+}
+
+const currentYear = Number(new Date().getFullYear());
+const wishes = ['здоровье', 'любовь', 'вдохновение', 'энтузиазм'];
+
+const party = new HappyNewYear(currentYear + 1, wishes);
+
+party.sayCongrats();
