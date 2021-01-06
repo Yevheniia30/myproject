@@ -21,7 +21,14 @@ const startRef = document.querySelector('button[data-action-start]');
 const stopRef = document.querySelector('button[data-action-stop]');
 
 const timer = {
-  start() {},
+  start() {
+    const startTime = Date.now();
+    setInterval(() => {
+      const currentTime = Date.now();
+      console.log(startTime);
+      console.log(currentTime);
+    }, 1000);
+  },
   stop() {},
 };
 
