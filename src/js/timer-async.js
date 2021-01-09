@@ -21,9 +21,17 @@ const startRef = document.querySelector('button[data-action-start]');
 const stopRef = document.querySelector('button[data-action-stop]');
 
 const timer = {
-  start() {},
+  start() {
+    const startTime = Date.now();
+    setInterval(() => {
+      const currentTime = Date.now();
+      const deltaTime = currentTime - startTime;
+    }, 1000);
+  },
   stop() {},
 };
+
+timer.start();
 
 // -----преобразование UNIX во время
 const updateClockface = time => {
