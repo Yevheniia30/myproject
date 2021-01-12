@@ -5,10 +5,11 @@ import './styles.css';
 
 // import './js/localstorage';
 
-import './js/date';
+// import './js/date';
 
-import './js/timer-async';
+// import './js/timer-async';
 
+import './js/promises';
 // import Timer from './js/timer';
 // import Todo from './js/todo';
 
