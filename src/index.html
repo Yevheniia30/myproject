@@ -7,31 +7,6 @@
     <title>Webpack Starter Kit</title>
 
     <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
   </head>
 
   <body>
@@ -95,14 +70,21 @@
     </form> -->
 
     <!-- ----------TIMER ASYNC--------- -->
-    <div class="timer">
+    <!-- <div class="timer">
       <p class="clockface js-clockface"></p>
       <div class="actions">
         <button class="timer-btn" data-action-start="">START</button>
         <button class="timer-btn" data-action-stop="">STOP</button>
       </div>
-    </div>
+    </div> -->
 
+    <!-- --------------ARTICLES------------ -->
+    <form class="search-form js-search-form">
+      <input type="text" name="query" />
+      <button type="submit">SEARCH</button>
+    </form>
+
+    <ul class="articles js-articles"></ul>
     <!-- <script src="./index.js"></script> -->
   </body>
 </html>

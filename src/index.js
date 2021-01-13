@@ -9,7 +9,9 @@ import './styles.css';
 
 // import './js/timer-async';
 
-import './js/promises';
+// import './js/promises';
+
+import './js/ajax';
 // import Timer from './js/timer';
 // import Todo from './js/todo';
 
