@@ -12,6 +12,8 @@ import './styles.css';
 // import './js/promises';
 
 import './js/ajax';
+
+// import './js/fetch-todos';
 // import Timer from './js/timer';
 // import Todo from './js/todo';
 

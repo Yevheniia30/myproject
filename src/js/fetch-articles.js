@@ -13,7 +13,7 @@ const fetchArticles = searchQuery => {
     fetch(url, options)
       .then(response => response.json())
       // .then(({ articles }) => updateMarcup(articles))
-      .then(data => data.articles)
+      .then(data => console.log(data))
       .catch(error => console.log(error))
   );
 };
