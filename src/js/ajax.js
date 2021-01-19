@@ -1,5 +1,3 @@
-import { data } from 'jquery';
-
 import fetchArticles from './fetch-articles';
 import updateMarkup from './update-markup';
 
