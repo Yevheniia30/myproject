@@ -11,9 +11,9 @@ refs.searchForm.addEventListener('submit', event => {
 
   const form = event.currentTarget;
   const inputValue = form.elements.query.value;
-  //   console.log(inputValue);
+  console.log(inputValue);
   refs.articlesList.innerHTML = '';
   form.reset();
-  //   console.log(event.currentTarget.elements.query.value);
+  console.log(event.currentTarget.elements.query.value);
   fetchArticles(inputValue).then(updateMarkup);
 });
