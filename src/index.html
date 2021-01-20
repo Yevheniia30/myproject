@@ -79,12 +79,30 @@
     </div> -->
 
     <!-- --------------ARTICLES------------ -->
-    <form class="search-form js-search-form">
-      <input type="text" name="query" />
-      <button type="submit">SEARCH</button>
+    <form class="form-inline search-form js-search-form">
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="searchQuery" class="sr-only">What search?</label>
+        <input
+          type="text"
+          class="form-control"
+          name="query"
+          id="searchQuery"
+          placeholder="What search?"
+          autocomplete="off"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">SEARCH</button>
     </form>
 
     <ul class="articles js-articles"></ul>
+
+    <button
+      type="button"
+      class="btn-primary button is-hidden"
+      data-action="load-more"
+    >
+      SHOW MORE
+    </button>
     <!-- <script src="./index.js"></script> -->
   </body>
 </html>

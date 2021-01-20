@@ -1,7 +1,7 @@
 const apiKey = '9bde886b859e4fbd80ed164de598bb99';
 
-const fetchArticles = searchQuery => {
-  const url = `http://newsapi.org/v2/everything?q=${searchQuery}&language=en`;
+const fetchArticles = (searchQuery, page = 1) => {
+  const url = `http://newsapi.org/v2/everything?q=${searchQuery}&language=en&pageSize=20&page=${page}&domains=eg bbc.co.uk, techcrunch.com, engadget.com`;
 
   const options = {
     headers: {
@@ -13,7 +13,7 @@ const fetchArticles = searchQuery => {
     fetch(url, options)
       .then(response => response.json())
       // .then(({ articles }) => updateMarcup(articles))
-      .then(articles => console.log(articles))
+      .then(({ articles }) => articles)
       .catch(error => console.log(error))
   );
 };
