@@ -13,7 +13,7 @@ import './styles.css';
 
 // import './js/ajax';
 
-import './js/crud';
+// import './js/crud';
 
 // import './js/fetch-todos';
 // import Timer from './js/timer';
