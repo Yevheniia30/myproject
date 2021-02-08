@@ -3,22 +3,37 @@ import { uuid } from 'uuidv4';
 import createBox from '../js/practice-box';
 import './styles.css';
 
-function solution(str) {
-  var splitString = str.split('');
-  var reverseString = splitString.reverse();
-  var joinString = reverseString.join('');
-  //   return joinString;
-  console.log(joinString);
-}
+// function solution(str) {
+//   var splitString = str.split('');
+//   var reverseString = splitString.reverse();
+//   var joinString = reverseString.join('');
+//   return joinString;
+// console.log(joinString);
 
-solution('hello');
+// solution('hello');
 
-function fib(n) {
-  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
-}
+// function fib(n) {
+//   return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+// }
 
-alert(fib(3));
-alert(fib(7));
+// alert(fib(3));
+// alert(fib(7));
+
+// const json = '{"name":"Mango","age":3,"isHappy":true}';
+// console.log(json);
+// const dog = JSON.parse(json);
+// console.log(dog); // {name: "Mango", age: 3, isHappy: true}
+
+// ------------показывает  предупреждение при вводе рандомного набора символов---------------
+// fetchMovies(inputValue).then(data => {
+//   if (data.length === 0) {
+//     refs.warningString.classList.remove('is-hidden');
+//     return;
+//   }
+//   refs.warningString.classList.add('is-hidden');
+//   refs.movieRef.innerHTML = '';
+//   searchResultsMarkup(data);
+// });
 // import './js/localstorage';
 
 // import './js/date';
